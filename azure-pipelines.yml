@@ -20,3 +20,23 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=javacodescan -DskipTests'
+
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package -DskipTests'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'artifact-cb'
+    publishLocation: 'pipeline'
+
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'current'
+    artifactName: 'artifact-cb'
+    targetPath: '$(Pipeline.Workspace)'
