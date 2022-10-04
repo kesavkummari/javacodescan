@@ -40,3 +40,44 @@ steps:
     buildType: 'current'
     artifactName: 'artifact-cb'
     targetPath: '$(Pipeline.Workspace)'
+    
+
+stages:
+- stage: validate
+  jobs:
+  - job: validate 
+    continueOnError: false
+    steps:
+    - task: TerraformInstaller@0
+      displayName: 'install'
+      inputs:
+        terraformVersion: '1.2.1'
+    - task: TerraformTaskV3@3
+      displayName: 'init' 
+      inputs:
+        provider: 'azurerm'
+        command: 'init'
+        backendServiceArm: 'terraform-rg-spn'
+        backendAzureRmResourceGroupName: 'terraform-rg'
+        backendAzureRmStorageAccountName: 'cloudbinary'
+        backendAzureRmContainerName: 'cloudbinarycontainer'
+        backendAzureRmKey: 'terraform.tfstate'
+    - task: TerraformTaskV3@3
+      displayName: validate
+      inputs:
+        provider: 'azurerm'
+        command: 'validate'
+    
+    - task: TerraformTaskV3@3
+      displayName: 'plan'
+      inputs:
+        provider: 'azurerm'
+        command: 'plan'
+        environmentServiceNameAzureRM: 'terraform-rg-spn'
+    
+    - task: TerraformTaskV3@3
+      displayName: 'apply'
+      inputs:
+        provider: 'azurerm'
+        command: 'apply'
+        environmentServiceNameAzureRM: 'terraform-rg-spn'
