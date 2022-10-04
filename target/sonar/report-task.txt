@@ -1,0 +1,7 @@
+organization=kummari
+projectKey=javacodescan
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.32648
+dashboardUrl=https://sonarcloud.io/dashboard?id=javacodescan
+ceTaskId=AYOhOYJRdlr8Jq2JHvrq
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYOhOYJRdlr8Jq2JHvrq

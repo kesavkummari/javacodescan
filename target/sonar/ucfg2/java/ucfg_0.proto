@@ -1,0 +1,46 @@
+
+bcom.example.devops.web.WelcomeController#welcome(Lorg/springframework/ui/Model;)Ljava/lang/String;d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java ("startingBlock* 
+startingBlockd
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java (#£ 
+d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java ("%
+modelorg.springframework.ui.Model"java.util.HashMap*
+1*Ê
+1d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java (Á
+¾
+d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java (
+%0org.slf4j.Logger"__id*8*6*
+(com.example.devops.web.WelcomeController"
+loggeróð
+d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java ()
+
+%1void"*org.slf4j.Logger#info(Ljava/lang/String;)V*
+
+%0org.slf4j.Logger*
+Processing index request2info(Ljava/lang/String;)Ø
+Õ
+d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java (("
+%2org.springframework.ui.Model"__mapSet*'
+%
+modelorg.springframework.ui.Model*
+
+course*
+
+DevOpsÖ
+Ó
+d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java	 (
+%3"template!index*,"*
+(com.example.devops.web.WelcomeController*'
+%
+modelorg.springframework.ui.Model"q
+d
+Z/Users/ck/gitdemo/javacodescan/src/main/java/com/example/devops/web/WelcomeController.java (	
+index:%
+modelorg.springframework.ui.ModelB,*
+(com.example.devops.web.WelcomeController
