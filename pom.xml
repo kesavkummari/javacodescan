@@ -41,7 +41,7 @@
         <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
     </snapshotRepository>
     <repository>
-        <id>central</id>
+        <id>example-repo-local</id>
         <name>example-repo-local</name>
         <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
     </repository>
