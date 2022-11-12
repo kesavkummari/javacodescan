@@ -33,20 +33,20 @@
 		<sonar.login>fd7ddeeb1b853985e1f77872d0e65dffb83d0b0e</sonar.login>
 	</properties>
 	
-	<!-- Jfrog Integration with POM.xml file 
+	<!-- Jfrog Integration with POM.xml file -->
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>jfrog.cloudbinary.io-snapshots</name>
-        <url>http://54.163.9.206:8081/artifactory/lib-cloudbinary-local/</url>
+        <name>example-repo-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
     </snapshotRepository>
     <repository>
         <id>central</id>
-        <name>jfrog.cloudbinary.io-releases</name>
-        <url>http://54.163.9.206:8081/artifactory/lib-cloudbinary-local/</url>
+        <name>example-repo-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
     </repository>
 </distributionManagement>
-	-->
+
 	
 	<scm>
 		<connection>scm:git:git@github.com:kesavkummari/javacodescan.git</connection>
