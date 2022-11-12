@@ -42,12 +42,12 @@ pipeline {
         }
           stage('Stage-8 : Delivery - Deliver a Artifact opscenter-5.0.0.war file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:redhat@123 -T target/**.war "http://18.212.250.66:8080/manager/text/deploy?path=/opscenter&update=true"'
+                sh 'curl -u admin:redhat@123 -T target/**.war "http://3.87.125.112:8080/manager/text/deploy?path=/opscenter&update=true"'
             }
         }
           stage('Stage-9 : SmokeTest') { 
             steps {
-                sh 'curl --retry-delay 10 --retry 5 "http://18.212.250.66:8080/opscenter"'
+                sh 'curl --retry-delay 10 --retry 5 "http://3.87.125.112:8080/opscenter"'
             }
         }
     }
