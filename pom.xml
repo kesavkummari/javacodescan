@@ -28,9 +28,9 @@
 		
 		<!-- SonarQube Integration -->
 		<sonar.organization>kummari</sonar.organization>
-		<sonar.projectKey>javacodescan</sonar.projectKey>
+		<sonar.projectKey>staropscenter</sonar.projectKey>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.login>7fe3112674adffe6d46bffe7757711a7f3b50b17</sonar.login>
+		<sonar.login>fd7ddeeb1b853985e1f77872d0e65dffb83d0b0e</sonar.login>
 	</properties>
 	
 	<!-- Jfrog Integration with POM.xml file 
