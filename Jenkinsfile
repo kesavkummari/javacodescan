@@ -4,6 +4,10 @@ node {
       git url: 'https://github.com/kesavkummari/javacodescan.git', branch: 'main'
       mvnHome = tool 'maven'
    }
+  stage ('Code Quality') {
+      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore sonar:sonar"
+  }
+
   stage ('Clean') {
       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean"
   }
@@ -14,16 +18,16 @@ node {
       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore compile"
   }
   stage ('Test') {
-      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore test -DskipTests"
+      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore test"
   }
   stage ('Package') {
-      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore package -DskipTests"
+      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore package"
   }
   stage ('Verify') {
-      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore verify -DskipTests"
+      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore verify"
   }
   stage ('Install') {
-      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore install -DskipTests"
+      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore install"
   }
   stage ('Deliver & Deployment') {
       sh 'curl -u admin:redhat@123 -T target/**.war "http://3.87.125.112:8080/manager/text/deploy?path=/kesav&update=true"'
