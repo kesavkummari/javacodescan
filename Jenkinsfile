@@ -40,5 +40,15 @@ pipeline {
                 sh 'mvn install -DskipTests'
             }
         }
+          stage('Stage-8 : Delivery - Deliver a Artifact opscenter-5.0.0-SNAPSHOT.war file to Tomcat Server') { 
+            steps {
+                sh 'curl -u admin:redhat@123 -T target/**.war "http://100.24.55.113:8080/manager/text/deploy?path=/opscenter&update=true"'
+            }
+        }
+          stage('Stage-9 : SmokeTest') { 
+            steps {
+                sh 'curl --retry-delay 10 --retry 5 "http://100.24.55.113:8080/opscenter"'
+            }
+        }
     }
 }
