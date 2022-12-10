@@ -33,50 +33,19 @@
 		<sonar.login>9647a0f0b39c831120479268e467e265e137701e</sonar.login>
 	</properties>
 	
-<!--	
-<distributionManagement>
-    <snapshotRepository>
-        <id>example-repo-local</id>
-        <name>example-repo-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
-    </snapshotRepository>
-    <repository>
-        <id>cb-lib-release-local</id>
-        <name>cb-lib-release-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
-    </repository>
-</distributionManagement>
-
-<distributionManagement>
-	
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>cb-libs-snapshot-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
-    </snapshotRepository>
-
-    <repository>
-        <id>releases</id>
-        <name>cb-lib-release-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
-    </repository>
-</distributionManagement>
--->
 	
 <!-- Jfrog Integration with POM.xml file -->
-
-	
 <distributionManagement>
     <snapshot>
-        <id>cb-libs-snapshot-local</id>
-        <name>cb-libs-snapshot-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
+	<id>cb-lib-release-local</id>
+        <name>cb-lib-release-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
     </snapshot>
 
     <repository>
-        <id>cb-lib-release-local</id>
-        <name>cb-lib-release-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
+        <id>cb-libs-snapshot-local</id>
+        <name>cb-libs-snapshot-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
     </repository>
 </distributionManagement>
 	
