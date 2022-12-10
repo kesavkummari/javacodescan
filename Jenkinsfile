@@ -32,7 +32,7 @@ node {
       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore deploy -DskipTests"
   }
   stage ('Deliver & Deployment') {
-      sh 'curl -u manager:Str0ngManagerPassw3rd -T target/**.war "http://54.166.230.167:8080/manager/text/deploy?path=/binary&update=true"'
+      sh 'curl -u admin:Str0ngAdminPassw3rd -T target/**.war "http://54.166.230.167:8080/manager/text/deploy?path=/binary&update=true"'
   }
   stage ('SmokeTest') {
       sh 'curl --retry-delay 10 --retry 5 "http://54.166.230.167:8080/binary"'
