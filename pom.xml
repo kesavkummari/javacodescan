@@ -67,11 +67,11 @@
 
 	
 <distributionManagement>
-    <snapshotRepository>
+    <snapshot>
         <id>cb-libs-snapshot-local</id>
         <name>cb-libs-snapshot-local</name>
         <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
-    </snapshotRepository>
+    </snapshot>
 
     <repository>
         <id>cb-lib-release-local</id>
