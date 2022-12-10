@@ -41,9 +41,9 @@
         <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
     </snapshotRepository>
     <repository>
-        <id>example-repo-local</id>
-        <name>example-repo-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
+        <id>cb-lib-release-local</id>
+        <name>cb-lib-release-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
     </repository>
 </distributionManagement>
 
