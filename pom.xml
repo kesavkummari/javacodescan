@@ -4,7 +4,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>binary</artifactId>
-	<version>1.0.0</version>
+	<version>9.0.0</version>
 	<packaging>war</packaging>
 
 	<name>Binary</name>
@@ -46,9 +46,7 @@
         <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
     </repository>
 </distributionManagement>
--->
-	
-<!-- Jfrog Integration with POM.xml file -->
+
 <distributionManagement>
 	
     <snapshotRepository>
@@ -59,6 +57,24 @@
 
     <repository>
         <id>releases</id>
+        <name>cb-lib-release-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
+    </repository>
+</distributionManagement>
+-->
+	
+<!-- Jfrog Integration with POM.xml file -->
+
+	
+<distributionManagement>
+    <snapshotRepository>
+        <id>cb-libs-snapshot-local</id>
+        <name>cb-libs-snapshot-local</name>
+        <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
+    </snapshotRepository>
+
+    <repository>
+        <id>cb-lib-release-local</id>
         <name>cb-lib-release-local</name>
         <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
     </repository>
