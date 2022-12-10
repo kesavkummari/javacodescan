@@ -6,11 +6,11 @@ pipeline {
     }
     stages {
 
-        stage('Stage-0 : Static Code Analysis Using SonarQube') { 
-            steps {
-                sh 'mvn clean verify sonar:sonar -DskipTests'
-            }
-        }
+//         stage('Stage-0 : Static Code Analysis Using SonarQube') { 
+//             steps {
+//                 sh 'mvn clean verify sonar:sonar -DskipTests'
+//             }
+//         }
 
         stage('Stage-1 : Clean') { 
             steps {
