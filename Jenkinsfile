@@ -4,9 +4,9 @@ node {
       git url: 'https://github.com/kesavkummari/javacodescan.git', branch: 'dev'
       mvnHome = tool 'maven'
    }
-  stage ('Code Quality') {
-      sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore sonar:sonar -DskipTests"
-  }
+//   stage ('Code Quality') {
+//       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore sonar:sonar -DskipTests"
+//   }
   stage ('Clean') {
       sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean"
   }
