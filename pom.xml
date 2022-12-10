@@ -36,16 +36,10 @@
 	
 <!-- Jfrog Integration with POM.xml file -->
 <distributionManagement>
-    <snapshotRepository>
+    <repository>
         <id>snapshot</id>
         <name>cb-libs-snapshot-local</name>
         <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
-    </snapshotRepository>
-
-    <repository>
-        <id>release</id>
-        <name>cb-lib-release-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/cb-lib-release-local/</url>
     </repository>
 </distributionManagement>
 	
