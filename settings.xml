@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <profiles>
+    <profile>
+      <id>default</id>
+      <repositories>
+        <repository>
+          <id>snapshot</id>
+          <name>cb-libs-snapshot-local</name>
+          <url>https://cloudbinary.jfrog.io/artifactory/cb-libs-snapshot-local/</url>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>default</activeProfile>
+  </activeProfiles>
+  <servers>
+    <server>
+      <id>snapshot</id>
+      <username></username>
+      <password></password>
+    </server>
+  </servers>
+</settings>
