@@ -26,14 +26,14 @@
 		<surefire.version>3.0.0-M7</surefire.version>
 		<jacoco.version>0.7.9</jacoco.version>
 		
-		<!-- SonarQube Integration -->
+<!-- SonarQube Integration
 		<sonar.organization>kummari</sonar.organization>
 		<sonar.projectKey>staropscenter</sonar.projectKey>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.login></sonar.login>
 	</properties>
-	
-	<!-- Jfrog Integration with POM.xml file -->
+-->	
+<!-- Jfrog Integration with POM.xml file
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
@@ -46,7 +46,7 @@
         <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
     </repository>
 </distributionManagement>
-
+-->
 	
 	<scm>
 		<connection>scm:git:git@github.com:kesavkummari/javacodescan.git</connection>
